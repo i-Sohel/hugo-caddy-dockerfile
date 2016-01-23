@@ -31,4 +31,4 @@ RUN cp hugo /usr/local/hugo/bin
 ENV PATH=$PATH:/usr/local/hugo/bin
 
 EXPOSE 22 80
-ENTRYPOINT ["/usr/local/caddy/bin/caddy"]
+ENTRYPOINT ["/bin/bash"]
