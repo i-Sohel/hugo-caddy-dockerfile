@@ -15,7 +15,7 @@ RUN apt-get install -y wget
 RUN wget https://github.com/mholt/caddy/releases/download/v0.8.1/caddy_linux_amd64.tar.gz
 RUN mkdir /usr/local/caddy
 RUN mkdir /usr/local/caddy/bin
-RUN su root -c "tar -C /usr/local/caddy/bin -xzf caddy_linux_amd64_custom.tar.gz"
+RUN su root -c "tar -C /usr/local/caddy/bin -xzf caddy_linux_amd64.tar.gz"
 ENV PATH=$PATH:/usr/local/caddy/bin
 RUN cd $HOME/go
 
